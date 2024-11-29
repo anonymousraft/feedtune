@@ -1,0 +1,79 @@
+# ---------------------------
+# Core Files and Directories
+# ---------------------------
+/wp-config.php
+/wp-content/uploads/
+/wp-content/upgrade/
+/wp-content/backup-*/ # Backup folders
+
+# ---------------------------
+# Plugin Specific
+# ---------------------------
+/vendor/              # Composer dependencies
+/node_modules/        # Node.js dependencies
+/.env                 # Environment variables
+/.env.local
+/.env.production
+/.env.test
+/.env.*.local
+
+# ---------------------------
+# Build and Cache Files
+# ---------------------------
+/.DS_Store            # macOS Finder files
+/.sass-cache          # Sass cache files
+/.cache               # Cache folders (like Webpack or Babel)
+/*.log                # Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/*.lock               # Dependency lock files
+
+# ---------------------------
+# IDE and Editor Files
+# ---------------------------
+/.idea/               # PHPStorm/JetBrains files
+/.vscode/             # VSCode settings
+*.swp                 # Swap files (Vim)
+/*.sublime-*          # Sublime Text files
+
+# ---------------------------
+# Package and Distribution
+# ---------------------------
+/*.zip                # Zipped package
+/*.tar.gz             # Tarball
+/plugin-name.zip      # Plugin packaged for distribution
+/dist/                # Build distribution folder
+/build/               # Temporary build folder
+
+# ---------------------------
+# Git Specific
+# ---------------------------
+/*.orig               # Merge conflict files
+/.gitignore           # Ignore itself (optional, if editing locally)
+
+# ---------------------------
+# WordPress Files to Ignore
+# ---------------------------
+/wp-content/*.sql     # Database dumps
+/debug.log            # WordPress debug log
+
+# ---------------------------
+# PHP Tools and Artifacts
+# ---------------------------
+/phpunit.xml          # PHPUnit configuration files
+/phpunit.xml.dist
+/phpcs.xml            # PHP CodeSniffer config
+/phpcs.xml.dist
+/phpstan.neon         # PHPStan config
+/phpstan.neon.dist
+
+# ---------------------------
+# Operating System Specific
+# ---------------------------
+*.~lock.*             # Windows lock files
+Thumbs.db             # Windows thumbnails
+desktop.ini           # Windows desktop settings
+ehthumbs.db           # Windows Thumbnails cache
+Icon?                 # macOS Finder icon files
+._*                   # macOS resource forks
